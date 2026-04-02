@@ -1,0 +1,40 @@
+body {
+  font-family: sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #fff;
+  color: #111;
+}
+```
+
+4. Commit changes
+
+---
+
+**Step 5: Enable GitHub Pages**
+
+1. Go to your repo's **Settings** tab
+2. In the left sidebar, click **Pages**
+3. Under **Branch**, select `main` and keep the folder as `/ (root)`
+4. Click **Save**
+
+---
+
+**Step 6: Visit Your Site**
+
+Wait about 1–2 minutes, then go to:
+```
+https://yourusername.github.io
+```
+
+It's live. Every time you edit a file and commit, the site updates automatically within a minute or two.
+
+---
+
+**The basic file structure to keep in mind:**
+```
+yourusername.github.io/
+├── index.html
+├── style.css
+└── (any images or other pages you add)

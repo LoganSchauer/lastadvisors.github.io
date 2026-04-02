@@ -4,50 +4,300 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Last Advisors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <span class="logo">Last Advisors</span>
-      <a href="mailto:hello@lastadvisors.com" class="nav-cta">Get in Touch</a>
-    </nav>
-  </header>
 
-  <main>
-    <section class="hero">
-      <h1>Strategic consulting for organizations that matter.</h1>
-      <p class="subhead">We partner with nonprofits and mission-driven leaders to build operational clarity, grow sustainably, and make better decisions.</p>
-      <a href="mailto:hello@lastadvisors.com" class="btn">Work With Us</a>
-    </section>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">Last Advisors</a>
+      <div class="nav-links">
+        <a href="#services">SERVICES</a>
+        <a href="#process">PROCESS</a>
+        <a href="#results">RESULTS</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn btn-sm">Get in touch</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
 
-    <section class="services">
-      <h2>What We Do</h2>
-      <div class="service-grid">
-        <div class="service-card">
-          <h3>Strategy</h3>
-          <p>Clarity on direction — who you serve, how you grow, and what to stop doing.</p>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">$12M+</span>
+          <span class="stat-label">SAVED FOR CLIENTS</span>
         </div>
-        <div class="service-card">
-          <h3>Operations</h3>
-          <p>Systems, processes, and infrastructure that scale without burning your team out.</p>
+        <div class="stat">
+          <span class="stat-number">50+</span>
+          <span class="stat-label">ENGAGEMENTS</span>
         </div>
-        <div class="service-card">
-          <h3>Leadership</h3>
-          <p>Coaching and advisory support for executives navigating hard decisions.</p>
+        <div class="stat">
+          <span class="stat-number">98%</span>
+          <span class="stat-label">CLIENT RETENTION</span>
         </div>
       </div>
-    </section>
+      <h1>Advisory that actually <em>moves the needle</em></h1>
+      <p class="hero-sub">We help growing companies make smarter financial and operational decisions — without the overhead of a full-time team.</p>
+      <a href="#contact" class="btn btn-lg">Work with us</a>
+    </div>
+  </section>
 
-    <section class="cta-section">
-      <h2>Let's talk.</h2>
-      <p>We take a small number of clients. If you're building something worth building, reach out.</p>
-      <a href="mailto:hello@lastadvisors.com" class="btn">hello@lastadvisors.com</a>
-    </section>
-  </main>
+  <!-- Logos / Social Proof -->
+  <section class="logos-section">
+    <div class="container">
+      <p class="section-label">TRUSTED BY</p>
+      <div class="logos-grid">
+        <div class="logo-placeholder">Client Logo</div>
+        <div class="logo-placeholder">Client Logo</div>
+        <div class="logo-placeholder">Client Logo</div>
+        <div class="logo-placeholder">Client Logo</div>
+        <div class="logo-placeholder">Client Logo</div>
+        <div class="logo-placeholder">Client Logo</div>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    <p>&copy; 2026 Last Advisors. All rights reserved.</p>
+  <!-- Services -->
+  <section id="services" class="services-section">
+    <div class="container">
+      <p class="section-label">WHAT WE DO</p>
+      <h2>The expertise you need, <em>exactly</em> when you need it</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+          </div>
+          <h3>Financial advisory</h3>
+          <ul>
+            <li>Forecasting and financial modeling</li>
+            <li>Cash flow optimization</li>
+            <li>Board-ready reporting</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <h3>Operational strategy</h3>
+          <ul>
+            <li>Process design and improvement</li>
+            <li>Systems and tooling selection</li>
+            <li>Scalable infrastructure planning</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>Fractional leadership</h3>
+          <ul>
+            <li>Part-time CFO and COO support</li>
+            <li>Executive-level thinking, startup-level speed</li>
+            <li>Embedded in your team, not outside it</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Differentiator -->
+  <section class="diff-section">
+    <div class="container">
+      <p class="section-label">WHY US</p>
+      <h2>Not your typical <em>consulting firm</em></h2>
+      <div class="comparison-grid">
+        <div class="comparison-card comparison-them">
+          <h3>Traditional firms</h3>
+          <ul>
+            <li>Long timelines and bloated scopes</li>
+            <li>Junior analysts doing the work</li>
+            <li>Decks that collect dust</li>
+            <li>One-size-fits-all playbooks</li>
+          </ul>
+        </div>
+        <div class="comparison-card comparison-us">
+          <h3>Last Advisors</h3>
+          <ul>
+            <li>Ship in weeks, not quarters</li>
+            <li>Senior partners on every engagement</li>
+            <li>Deliverables you actually use</li>
+            <li>Built around your specific situation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="process-section">
+    <div class="container">
+      <p class="section-label">HOW IT WORKS</p>
+      <h2>From first call to <em>real results</em></h2>
+      <div class="steps-grid">
+        <div class="step">
+          <span class="step-number">01</span>
+          <h3>Discovery call</h3>
+          <p>We learn your business, your challenges, and what success looks like. No pitch deck — just a conversation.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">02</span>
+          <h3>Diagnostic</h3>
+          <p>We dig into your numbers, processes, and team structure. You get a clear-eyed assessment within two weeks.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">03</span>
+          <h3>Roadmap</h3>
+          <p>A prioritized action plan with quick wins and long-term plays. Every recommendation tied to a measurable outcome.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">04</span>
+          <h3>Execution</h3>
+          <p>We roll up our sleeves and work alongside your team. Not just advice — implementation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Results / Testimonials -->
+  <section id="results" class="results-section">
+    <div class="container">
+      <p class="section-label">RESULTS</p>
+      <h2>What our clients <em>actually say</em></h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <blockquote>
+            <p>"They helped us cut our close process from 15 days to 5. That alone was worth the engagement."</p>
+          </blockquote>
+          <div class="testimonial-author">
+            <strong>Client Name</strong>
+            <span>Title, Company</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            <p>"Most consultants hand you a binder and leave. These two actually built the systems with us."</p>
+          </blockquote>
+          <div class="testimonial-author">
+            <strong>Client Name</strong>
+            <span>Title, Company</span>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <blockquote>
+            <p>"We went from flying blind to having a real financial operating model in six weeks."</p>
+          </blockquote>
+          <div class="testimonial-author">
+            <strong>Client Name</strong>
+            <span>Title, Company</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="faq-section">
+    <div class="container">
+      <p class="section-label">FAQ</p>
+      <h2>Questions we hear <em>all the time</em></h2>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>How is this different from hiring a full-time CFO or COO?</summary>
+          <p>You get senior-level expertise without the $200K+ salary, benefits, and ramp-up time. We plug in fast, deliver results, and scale our involvement up or down as your needs change.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What size companies do you work with?</summary>
+          <p>Mostly companies between $2M and $50M in revenue. Big enough to have real complexity, small enough that every dollar and decision matters.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How long does a typical engagement last?</summary>
+          <p>Project-based work usually runs 4 to 12 weeks. Fractional roles are ongoing, typically 3+ months. We don't do long-term contracts for the sake of it — we stay as long as we're useful.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you work with companies outside the US?</summary>
+          <p>Yes. We've worked with teams across multiple time zones. Most of our work is remote-first.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What does pricing look like?</summary>
+          <p>It depends on scope. Project engagements are fixed-fee. Fractional roles are monthly retainers. We'll give you a clear number after our discovery call — no surprises.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="cta-section">
+    <div class="container">
+      <h2>Ready to stop guessing and <em>start building</em>?</h2>
+      <p>Book a 30-minute discovery call. No pitch, no pressure — just a real conversation about where you are and where you want to go.</p>
+      <a href="mailto:hello@lastadvisors.com" class="btn btn-lg btn-light">Let's talk</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="nav-logo">Last Advisors</a>
+        <p>Advisory for companies that want to move fast and get it right.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#results">Results</a>
+        <a href="#faq">FAQ</a>
+        <a href="mailto:hello@lastadvisors.com">Contact</a>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; 2026 Last Advisors. All rights reserved.</p>
+      </div>
+    </div>
   </footer>
+
+  <script>
+    // Mobile nav toggle
+    const toggle = document.querySelector('.nav-toggle');
+    const links = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      links.classList.toggle('open');
+      toggle.classList.toggle('open');
+    });
+
+    // FAQ accordion - close others when one opens
+    document.querySelectorAll('.faq-item').forEach(item => {
+      item.addEventListener('toggle', () => {
+        if (item.open) {
+          document.querySelectorAll('.faq-item').forEach(other => {
+            if (other !== item) other.open = false;
+          });
+        }
+      });
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          links.classList.remove('open');
+          toggle.classList.remove('open');
+        }
+      });
+    });
+  </script>
+
 </body>
 </html>
